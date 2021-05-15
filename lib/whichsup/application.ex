@@ -9,7 +9,7 @@ defmodule Whichsup.Application do
   def start(_type, _args) do
     children = [
       # Starts a worker by calling: Whichsup.Worker.start_link(arg)
-      # {Whichsup.Worker, arg}
+      {Whichsup.Genserver, []}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
